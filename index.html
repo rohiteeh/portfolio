@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J. Rohit Rajan | Portfolio - I Build Websites That Help People</title>
+  <meta name="description" content="Portfolio of J. Rohit Rajan, BCA Student at Hindusthan College of Science and Commerce. Passionate about software development, web technologies, and building solutions that help people.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="J. Rohit Rajan | Portfolio">
+  <meta property="og:description" content="Explore projects: Uyir (Hackathon Winner), CalScan AI Nutrition Counter, and your next big idea.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+
+  <!-- Interactive Ambient Particle Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" id="nav-brand-link">
+        <span class="nav-brand-logo" id="avatar-initials">RR</span>
+        <span id="brand-name-target">J. Rohit Rajan</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Quick Name Personalizer Button -->
+        <button type="button" class="btn-name-edit" id="btn-edit-name" title="Click to customize name">
+          ✏️ <span>Set Name</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button type="button" class="btn-name-edit btn-icon" id="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          🌙
+        </button>
+
+        <!-- Resume CTA Button in Nav -->
+        <button type="button" class="btn btn-emerald btn-sm btn-open-resume" id="nav-resume-btn">
+          📄 <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-content">
+        <!-- Available Badge -->
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Open to Software Dev, Web Dev, IT Support & Cybersecurity Roles</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="hero-greeting">
+          Hi, I'm <span class="name-highlight gradient-text" id="hero-name-target" title="Click to edit name">J. Rohit Rajan</span>
+        </h1>
+
+        <!-- Core Tagline with Dynamic Typewriter -->
+        <p class="hero-tagline">
+          I build websites that <span class="gradient-emerald-text" id="typing-target">help people</span><span class="typing-cursor"></span>
+        </p>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle">
+          BCA Student at Hindusthan College of Science & Commerce with a strong foundation in programming, web development, and problem-solving. Passionate about learning emerging technologies and building practical software solutions.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+            <span>Explore My Work</span> 🚀
+          </a>
+          <button type="button" class="btn btn-emerald btn-open-resume" id="hero-cta-resume">
+            <span>Download Resume</span> 📥
+          </button>
+          <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">
+            <span>Let's Talk</span> 💬
+          </a>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number gradient-text">1st</span>
+            <span class="stat-label">Hackathon Winner (Uyir)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number gradient-emerald-text">3+</span>
+            <span class="stat-label">Featured Impact Solutions</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number gradient-text">100%</span>
+            <span class="stat-label">Commitment to Clean Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Engineering with <span class="gradient-text">Purpose & Empathy</span></h2>
+          <p>Writing code isn't just about syntax—it's about creating tools that empower people and lift communities.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Visual Column -->
+          <div class="about-visual">
+            <div class="about-image-wrapper">
+              <img src="assets/images/avatar.jpg" alt="Developer Portrait" loading="lazy" id="about-avatar-img">
+            </div>
+            
+            <div class="about-floating-card">
+              <div class="about-floating-icon">🏆</div>
+              <div>
+                <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">Hackathon Champion</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">State-level civic tech innovation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative Column -->
+          <div class="about-story">
+            <h3>Bridging foundational programming with modern web engineering.</h3>
+            
+            <p>
+              I am a Bachelor of Computer Applications (BCA) student at Hindusthan College of Science and Commerce based in Erode, Tamil Nadu. My passion lies in learning emerging technologies, building purposeful web tools, and solving complex problems with clean logic.
+            </p>
+
+            <p>
+              From building civic awareness web platforms like <em>Uyir (Drug-Free TN)</em> to exploring computer vision dietary scanners like <em>CalScan</em>, I am committed to continuous learning across C, C++, Java, HTML, CSS, and modern web development. I am seeking entry-level Software Developer, Web Developer, IT Support, or Cybersecurity opportunities where I can deliver genuine value.
+            </p>
+
+            <div class="philosophy-grid">
+              <div class="philosophy-card">
+                <h4>✨ Human-Centered Design</h4>
+                <p>Prioritizing accessibility, empathetic UX, and intuitive flows so anyone can use the software effortlessly.</p>
+              </div>
+
+              <div class="philosophy-card">
+                <h4>🛡️ Robust Architecture</h4>
+                <p>Clean code, typed safety, maintainable patterns, and performant APIs built to scale smoothly.</p>
+              </div>
+
+              <div class="philosophy-card">
+                <h4>⚡ Rapid Problem Solver</h4>
+                <p>Hackathon-tested speed with the discipline to deliver high-quality, production-ready systems under pressure.</p>
+              </div>
+
+              <div class="philosophy-card">
+                <h4>🤝 Collaborative Mindset</h4>
+                <p>Clear communication, open feedback culture, and dedication to shared mission goals.</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#contact" class="btn btn-primary">
+                <span>Start a Conversation</span> ✉️
+              </a>
+              <button type="button" class="btn btn-secondary btn-open-resume">
+                <span>View Full CV</span> 📄
+              </button>
+            </div>
+
+            <!-- Interactive Dev Console Widget -->
+            <div class="terminal-widget" id="terminal-widget">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                </div>
+                <div class="terminal-title">rohit@developer-station: ~</div>
+                <div style="font-size: 0.72rem; color: #10b981; font-weight: 600;">● Online</div>
+              </div>
+              <div class="terminal-body" id="terminal-output-target">
+                <div class="terminal-prompt-line">
+                  <span class="terminal-prompt-user">rohit@portfolio:~$</span>
+                  <span>whoami</span>
+                </div>
+                <div class="terminal-output">👋 J. Rohit Rajan | BCA Student @ Hindusthan College of Science & Commerce
+🎯 Aspiring Software Developer • Web Developer • Cybersecurity Enthusiast
+📍 Erode, Tamil Nadu, India</div>
+              </div>
+              <div class="terminal-quick-actions">
+                <span style="font-size: 0.72rem; color: var(--text-muted); align-self: center; margin-right: 4px;">Run command:</span>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('whoami')">whoami</button>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('skills')">cat skills.json</button>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('education')">cat education.txt</button>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('hackathon')">./uyir_hackathon.sh</button>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('contact')">rohit --contact</button>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('clear')">clear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Showcasing <span class="gradient-text">3 Best Projects</span></h2>
+          <p>Real-world web solutions engineered with modern stacks, direct social impact, and high-performance design.</p>
+        </div>
+
+        <!-- 3 Projects Grid (Uyir, CalScan, Your Next Project) -->
+        <div class="projects-grid" id="projects-grid-target">
+          <!-- Dynamically populated by js/app.js & js/projects-data.js with fallbacks -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Toolbox</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+          <p>The modern languages, frameworks, and cloud tools I leverage to build reliable digital products.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-tabs">
+          <button type="button" class="skill-tab-btn active" data-category="all">All Skills</button>
+          <button type="button" class="skill-tab-btn" data-category="frontend">Frontend & UI</button>
+          <button type="button" class="skill-tab-btn" data-category="backend">Backend & Database</button>
+          <button type="button" class="skill-tab-btn" data-category="ai-tools">AI & DevOps</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid" id="skills-grid-target">
+          <!-- Populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Contact + Resume Download Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Impactful</span></h2>
+          <p>Have an idea, an engineering opportunity, or want to discuss a civic/AI project? Send me a message or download my resume.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Resume Download Card -->
+          <div class="contact-info-card">
+            <div class="contact-highlight-box">
+              <h4>Ready to Collaborate?</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                I am currently seeking entry-level Software Developer, Web Developer, IT Support, or Cybersecurity roles. Let's connect!
+              </p>
+              
+              <div style="margin-top: 1.2rem;">
+                <button type="button" class="btn btn-emerald btn-open-resume" style="width: 100%;" id="contact-download-resume-btn">
+                  <span>📥 Download J. Rohit Rajan's Resume</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-links-list">
+              <!-- Direct Email -->
+              <div class="contact-link-row" onclick="copyToClipboard('rohitrajan1436@gmail.com', 'Email Address')" style="cursor: pointer;" title="Click to copy email">
+                <span class="contact-link-icon">✉️</span>
+                <div class="contact-link-text">
+                  <div class="contact-link-label">Email Me</div>
+                  <div class="contact-link-val">rohitrajan1436@gmail.com</div>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--accent-cyan);">Copy 📋</span>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-link-row" onclick="copyToClipboard('+91 8248064014', 'Phone Number')" style="cursor: pointer;" title="Click to copy phone">
+                <span class="contact-link-icon">📱</span>
+                <div class="contact-link-text">
+                  <div class="contact-link-label">Phone</div>
+                  <div class="contact-link-val">+91 8248064014</div>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--accent-cyan);">Copy 📋</span>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-link-row">
+                <span class="contact-link-icon">📍</span>
+                <div class="contact-link-text">
+                  <div class="contact-link-label">Location</div>
+                  <div class="contact-link-val">Erode, Tamil Nadu, India</div>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/rohitrajan" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+                <span class="contact-link-icon">💼</span>
+                <div class="contact-link-text">
+                  <div class="contact-link-label">LinkedIn</div>
+                  <div class="contact-link-val">linkedin.com/in/rohitrajan</div>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Connect ↗</span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/rohitrajan" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+                <span class="contact-link-icon">🐙</span>
+                <div class="contact-link-text">
+                  <div class="contact-link-label">GitHub</div>
+                  <div class="contact-link-val">github.com/rohitrajan</div>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--text-muted);">Visit ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card">
+            <form id="portfolio-contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Recruiter / Founder Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. recruiter@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-project-type" class="form-label">Opportunity / Inquiry Type</label>
+                <select id="contact-project-type" class="form-select">
+                  <option value="entry-level-dev">Entry-Level Software Developer Role</option>
+                  <option value="web-dev">Web Developer Role</option>
+                  <option value="it-cybersecurity">IT Support / Cybersecurity Role</option>
+                  <option value="collaboration">Project Collaboration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Share job description, team details, or project ideas..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+                <span>Send Message to Rohit</span> 🚀
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700;">
+        <span class="gradient-text" id="footer-name-target">J. Rohit Rajan</span>
+      </div>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">
+        "I build websites that help people." • BCA Student, Hindusthan College of Science and Commerce.
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/rohitrajan" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub" aria-label="GitHub">🐙</a>
+        <a href="https://linkedin.com/in/rohitrajan" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn" aria-label="LinkedIn">💼</a>
+        <a href="mailto:rohitrajan1436@gmail.com" class="footer-social-link" title="Email" aria-label="Email">✉️</a>
+      </div>
+
+      <div style="font-size: 0.8rem; color: var(--text-subtle); margin-top: 0.8rem;">
+        © <span id="current-year">2026</span> J. Rohit Rajan. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODALS
+       ======================================================================== -->
+
+  <!-- 1. Resume Viewer & Download Modal -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="resume-modal-title">
+          <span>📄 Professional Resume Preview</span>
+        </h3>
+        <button type="button" class="modal-close-btn" id="close-resume-modal" aria-label="Close Resume Modal">✕</button>
+      </div>
+
+      <div class="modal-body" id="resume-content-target">
+        <!-- Injected dynamically by js/resume.js -->
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="btn-download-resume-html">
+          <span>💾 Download HTML</span>
+        </button>
+        <button type="button" class="btn btn-emerald" id="btn-print-resume">
+          <span>🖨️ Print / Save as PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Project Case Study & Live Preview Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="project-modal-title">
+          <span>🔍 Project Deep Dive & Preview</span>
+        </h3>
+        <button type="button" class="modal-close-btn" id="close-project-modal" aria-label="Close Project Modal">✕</button>
+      </div>
+
+      <div class="modal-body" id="project-modal-content-target">
+        <!-- Injected dynamically by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Name Personalizer Modal -->
+  <div class="modal-overlay" id="name-modal" role="dialog" aria-modal="true" aria-labelledby="name-modal-title">
+    <div class="modal-content" style="max-width: 480px;">
+      <div class="modal-header">
+        <h3 class="modal-title" id="name-modal-title">
+          <span>✏️ Personalize Your Portfolio</span>
+        </h3>
+        <button type="button" class="modal-close-btn" id="close-name-modal" aria-label="Close Modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.92rem; color: var(--text-muted);">
+          Enter your name below to personalize the Hero ("Hi, I'm [Your Name]"), the navigation brand, and the printable resume instantly:
+        </p>
+
+        <form id="name-form">
+          <input type="text" id="name-modal-input" class="name-modal-input" placeholder="e.g. John Doe" required maxlength="40">
+          
+          <div style="display: flex; gap: 0.8rem; justify-content: flex-end;">
+            <button type="button" class="btn btn-secondary" onclick="closeNameModal()">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save & Apply</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/resume.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
