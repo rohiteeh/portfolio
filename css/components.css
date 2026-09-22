@@ -370,15 +370,92 @@
   box-shadow: var(--shadow-md);
 }
 
-.about-image-wrapper img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  transition: transform var(--transition-smooth);
+.about-profile-card {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  transition: all var(--transition-normal);
 }
 
-.about-image-wrapper:hover img {
-  transform: scale(1.03);
+.about-profile-card:hover {
+  border-color: rgba(0, 242, 254, 0.35);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 242, 254, 0.15);
+  transform: translateY(-4px);
+}
+
+.profile-avatar-monogram {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 1.4rem;
+}
+
+.monogram-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 0 0 35px rgba(0, 242, 254, 0.35);
+}
+
+.monogram-ring {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50%;
+  border: 2px dashed rgba(0, 242, 254, 0.45);
+  animation: rotate-slow 20s linear infinite;
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.profile-card-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.3rem;
+}
+
+.profile-card-role {
+  font-size: 0.92rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.profile-card-meta {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--bg-card-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: left;
+  margin-bottom: 1.4rem;
 }
 
 .about-floating-card {
