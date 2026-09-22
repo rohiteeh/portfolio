@@ -47,11 +47,11 @@ const resumeData = {
   projects: [
     {
       title: "Uyir - Drug-Free TN",
-      tagline: "State Hackathon Winner Project",
+      tagline: "Civic Web Initiative",
       bullets: [
         "Civic web platform developed to raise substance abuse awareness and provide direct access to verified rehabilitation centers across Tamil Nadu.",
         "Integrated interactive locator map and emergency health helpline routing (104).",
-        "Awarded 1st place for impactful societal application and clean user interface."
+        "Engineered for impactful societal application and clean user interface."
       ]
     },
     {

@@ -7,12 +7,12 @@ const portfolioProjects = [
     id: "uyir",
     title: "Uyir - Drug-Free TN",
     subtitle: "Civic Web Platform for Substance Abuse Prevention & Community Support",
-    badge: "🏆 Hackathon Winner",
+    badge: "🌱 Civic Tech Platform",
     badgeClass: "badge-winner",
     cardClass: "featured-winner",
     image: "assets/images/project-uyir.jpg",
-    description: "An award-winning civic tech platform engineered to support Tamil Nadu's anti-substance mission. Features geo-located rehabilitation & counseling centers, 24/7 crisis helpline routing (104), secure anonymous reporting, and youth educational resources.",
-    impact: "🏆 1st Prize Winner • 120+ Verified Centers • Real-time 24/7 Helpline Routing",
+    description: "A civic tech web platform engineered to support Tamil Nadu's anti-substance mission. Features geo-located rehabilitation & counseling centers, 24/7 crisis helpline routing (104), secure anonymous reporting, and youth educational resources.",
+    impact: "🌱 120+ Verified Centers • Real-time 24/7 Helpline Routing • GIS Mapping",
     tech: ["HTML5", "CSS3", "JavaScript", "Leaflet Maps API", "Web Development"],
     liveUrl: "#project-modal-uyir",
     githubUrl: "https://github.com/rohitrajan/uyir-drug-free-tn",
@@ -25,7 +25,7 @@ const portfolioProjects = [
         "Direct one-click connection to the Government 104 and 14416 health helplines.",
         "Educational interactive modules and recovery stories designed to destigmatize seeking help."
       ],
-      metrics: "Recognized as 1st Prize Winner for societal impact, clean architectural code, and intuitive mobile accessibility."
+      metrics: "Developed for high societal impact, clean architectural code, and intuitive mobile accessibility."
     }
   },
   {

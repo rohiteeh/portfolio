@@ -460,7 +460,7 @@ function initTypewriter() {
   const phrases = [
     "help people.",
     "solve real-world challenges.",
-    "save lives (Uyir Hackathon Winner).",
+    "save lives (Uyir Civic Platform).",
     "track nutrition with AI (CalScan).",
     "turn ambitious ideas into reality."
   ];
@@ -663,10 +663,15 @@ window.runTerminalCmd = function (cmd) {
 🏫 The Shree Ganga School
    SSLC (Class X) [2022]`,
 
-    hackathon: `🏆 [HACKATHON WINNER] Uyir - Drug-Free Tamil Nadu
-- 1st Place State Level Civic Tech Award
+    uyir: `🌱 [CIVIC TECH PROJECT] Uyir - Drug-Free Tamil Nadu
+- Civic Tech Platform for Community Healthcare
 - Mapped 120+ verified rehabilitation clinics with Leaflet GIS
-- Direct 104 helpline routing + encrypted reporting pipeline`,
+- Direct 104 helpline routing + secure reporting pipeline`,
+
+    hackathon: `🌱 [CIVIC TECH PROJECT] Uyir - Drug-Free Tamil Nadu
+- Civic Tech Platform for Community Healthcare
+- Mapped 120+ verified rehabilitation clinics with Leaflet GIS
+- Direct 104 helpline routing + secure reporting pipeline`,
 
     contact: `📬 Contact J. Rohit Rajan:
 - Email: rohitrajan1436@gmail.com
