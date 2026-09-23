@@ -677,7 +677,7 @@ window.runTerminalCmd = function (cmd) {
 - Email: rohitrajan1436@gmail.com
 - Phone: +91 8248064014
 - LinkedIn: linkedin.com/in/rohitrajan
-- GitHub: github.com/rohitrajan`,
+- GitHub: github.com/rohiteeh`,
 
     clear: ""
   };

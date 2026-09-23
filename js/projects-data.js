@@ -65,7 +65,7 @@ const portfolioProjects = [
     impact: "✨ Open to Entry-Level Developer, Web Dev, IT Support & Cybersecurity Roles",
     tech: ["HTML5 / CSS3", "C / C++", "Java", "Web Development", "Problem Solving"],
     liveUrl: "#contact",
-    githubUrl: "https://github.com/rohitrajan",
+    githubUrl: "https://github.com/rohiteeh",
     demoAction: "scrollToContact",
     caseStudy: {
       overview: "Great software starts with passion, clean fundamentals, and the dedication to learn emerging technologies.",
