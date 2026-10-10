@@ -96,6 +96,24 @@
   .resume-contact-info {
     text-align: left;
   }
+
+  /* SVG Showcase & City Switcher Mobile Tweaks */
+  .svg-showcase-card {
+    border-radius: 16px;
+  }
+
+  .city-tab-btn {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .shields-row {
+    gap: 0.4rem;
+  }
+
+  .builds-table-container {
+    border-radius: 14px;
+  }
 }
 
 /* High-res / Ultra-wide adjustments */

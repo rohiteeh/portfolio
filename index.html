@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J. Rohit Rajan | Portfolio - I Build Websites That Help People</title>
-  <meta name="description" content="Portfolio of J. Rohit Rajan, BCA Student at Hindusthan College of Science and Commerce. Passionate about software development, web technologies, and building solutions that help people.">
+  <title>J. Rohit Rajan | Full-Stack Web Developer & Civic Tech Engineer</title>
+  <meta name="description" content="Portfolio of J. Rohit Rajan (@rohiteeh) — Full-Stack Web Developer & BCA Student at Hindusthan College of Science and Commerce. Engineering civic tech web platforms (Uyir), dietary AI vision systems (CalScan), and motion-heavy anime web experiences.">
   
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="J. Rohit Rajan | Portfolio">
-  <meta property="og:description" content="Explore projects: Uyir (Civic Tech Platform), CalScan AI Nutrition Counter, and your next big idea.">
+  <meta property="og:title" content="J. Rohit Rajan | Full-Stack Developer & Civic Tech Portfolio">
+  <meta property="og:description" content="Explore featured builds: Uyir (Drug-Free TN), CalScan AI Nutrition Counter, Naruto Sage Mode, Zoro King of Hell, and 3D Contribution Skyline.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/index.css">
@@ -40,10 +40,12 @@
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#about" class="nav-link">About & Life</a></li>
+          <li><a href="#stack" class="nav-link">Tech Stack</a></li>
+          <li><a href="#developer-id" class="nav-link">Developer ID</a></li>
+          <li><a href="#builds" class="nav-link">Featured Builds</a></li>
+          <li><a href="#city" class="nav-link">3D City</a></li>
+          <li><a href="#connect" class="nav-link">Connect</a></li>
         </ul>
       </nav>
 
@@ -72,13 +74,15 @@
   </header>
 
   <main>
-    <!-- 1. Hero Section -->
+    <!-- ========================================================================
+         1. HERO SECTION (Animated hero.svg Showcase)
+         ======================================================================== -->
     <section class="hero-section" id="hero">
       <div class="container hero-content">
         <!-- Available Badge -->
         <div class="status-badge">
           <span class="status-dot"></span>
-          <span>Open to Software Dev, Web Dev, IT Support & Cybersecurity Roles</span>
+          <span>Open to Full-Stack, Web Dev, IT Support & Civic Tech Opportunities</span>
         </div>
 
         <!-- Main Headline -->
@@ -88,83 +92,104 @@
 
         <!-- Core Tagline with Dynamic Typewriter -->
         <p class="hero-tagline">
-          I build websites that <span class="gradient-emerald-text" id="typing-target">help people</span><span class="typing-cursor"></span>
+          I build websites that <span class="gradient-emerald-text" id="typing-target">help people.</span><span class="typing-cursor"></span>
         </p>
 
         <!-- Subtitle -->
         <p class="hero-subtitle">
-          BCA Student at Hindusthan College of Science & Commerce with a strong foundation in programming, web development, and problem-solving. Passionate about learning emerging technologies and building practical software solutions.
+          Full-Stack Web Developer & BCA Student at Hindusthan College of Science & Commerce, Erode, TN. Engineering civic tech web platforms, dietary AI vision systems, and motion-heavy web experiences.
         </p>
 
         <!-- CTAs -->
         <div class="hero-ctas">
-          <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
-            <span>Explore My Work</span> 🚀
+          <a href="#builds" class="btn btn-primary" id="hero-cta-projects">
+            <span>Explore Featured Builds</span> 🚀
           </a>
           <button type="button" class="btn btn-emerald btn-open-resume" id="hero-cta-resume">
             <span>Download Resume</span> 📥
           </button>
-          <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">
+          <a href="#city" class="btn btn-secondary">
+            <span>3D Contribution City</span> 🌃
+          </a>
+          <a href="#connect" class="btn btn-secondary" id="hero-cta-contact">
             <span>Let's Talk</span> 💬
           </a>
         </div>
 
-        <!-- Quick Stats -->
-        <div class="hero-stats">
+        <!-- Animated Hero Showcase Card (hero.svg) -->
+        <div class="svg-showcase-container" style="margin-top: 2.5rem;">
+          <div class="svg-showcase-card">
+            <div class="svg-wrapper">
+              <img src="hero.svg" alt="Hi, I'm J. Rohit Rajan — Full-Stack Web Developer" id="hero-svg-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats Strip -->
+        <div class="hero-stats" style="margin-top: 2rem;">
           <div class="stat-item">
             <span class="stat-number gradient-text">120+</span>
             <span class="stat-label">Verified Centers Mapped (Uyir)</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number gradient-emerald-text">3+</span>
-            <span class="stat-label">Featured Impact Solutions</span>
+            <span class="stat-number gradient-emerald-text">28 ⭐</span>
+            <span class="stat-label">Flagship Civic Tech Stars</span>
           </div>
           <div class="stat-item">
             <span class="stat-number gradient-text">100%</span>
-            <span class="stat-label">Commitment to Clean Code</span>
+            <span class="stat-label">Commitment to Clean Architecture</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 2. About Me Section -->
+    <!-- ========================================================================
+         2. ABOUT & LIFESTYLE (about-life.svg Showcase + Terminal Console)
+         ======================================================================== -->
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">About Me</span>
-          <h2 class="section-title">Engineering with <span class="gradient-text">Purpose & Empathy</span></h2>
-          <p>Writing code isn't just about syntax—it's about creating tools that empower people and lift communities.</p>
+          <span class="section-tag">About & Lifestyle</span>
+          <h2 class="section-title">What I Build, and <span class="gradient-text">Life Beyond the Code</span></h2>
+          <p>Engineering with purpose on the web, fueled by continuous curiosity, anime storytelling, and community impact.</p>
+        </div>
+
+        <!-- Animated About & Life Showcase Card (about-life.svg) -->
+        <div class="svg-showcase-container" style="margin-bottom: 3rem;">
+          <div class="svg-showcase-card">
+            <div class="svg-wrapper">
+              <img src="about-life.svg" alt="What I build, and life beyond the code" id="about-life-svg-img" />
+            </div>
+          </div>
         </div>
 
         <div class="about-grid">
-          <!-- Visual Column: Developer Identity Card -->
+          <!-- Visual Column: Philosophy Cards -->
           <div class="about-visual">
-            <div class="about-profile-card">
-              <div class="profile-avatar-monogram">
-                <div class="monogram-inner">RR</div>
-                <div class="monogram-ring"></div>
-              </div>
-              <h3 class="profile-card-name">J. Rohit Rajan</h3>
-              <p class="profile-card-role">BCA Student • Aspiring Developer</p>
-              
-              <div class="profile-card-meta">
-                <div>🎓 <strong>College:</strong> Hindusthan College of Science & Commerce</div>
-                <div>📍 <strong>Location:</strong> Erode, Tamil Nadu, India</div>
-                <div>⚡ <strong>Skills:</strong> C, C++, Java, HTML, CSS</div>
-                <div>🟢 <strong>Status:</strong> Open to Entry-Level Roles</div>
+            <div class="philosophy-grid" style="display: flex; flex-direction: column; gap: 1rem;">
+              <div class="philosophy-card">
+                <h4>✨ Human-Centered Design</h4>
+                <p>Prioritizing accessibility, empathetic UX, and frictionless flows so anyone can use the software effortlessly.</p>
               </div>
 
-              <div class="about-floating-card" style="position: static; margin-top: 0.5rem; width: 100%;">
-                <div class="about-floating-icon">🌱</div>
-                <div style="text-align: left;">
-                  <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">Civic Tech Innovation</div>
-                  <div style="font-size: 0.8rem; color: var(--text-muted);">Community healthcare web platform (Uyir)</div>
-                </div>
+              <div class="philosophy-card">
+                <h4>🛡️ Robust Architecture</h4>
+                <p>Clean code, typed safety, maintainable patterns, and performant APIs built to scale smoothly under load.</p>
+              </div>
+
+              <div class="philosophy-card">
+                <h4>🌱 Civic Tech Innovation</h4>
+                <p>Engineered Uyir (Drug-Free TN) to connect individuals with 120+ verified rehabilitation clinics and 24/7 helplines.</p>
+              </div>
+
+              <div class="philosophy-card">
+                <h4>🤝 Collaborative Mindset</h4>
+                <p>Clear communication, open feedback culture, and dedication to shared engineering mission goals.</p>
               </div>
             </div>
           </div>
 
-          <!-- Narrative Column -->
+          <!-- Narrative & Interactive Terminal Console -->
           <div class="about-story">
             <h3>Bridging foundational programming with modern web engineering.</h3>
             
@@ -173,33 +198,11 @@
             </p>
 
             <p>
-              From building civic awareness web platforms like <em>Uyir (Drug-Free TN)</em> to exploring computer vision dietary scanners like <em>CalScan</em>, I am committed to continuous learning across C, C++, Java, HTML, CSS, and modern web development. I am seeking entry-level Software Developer, Web Developer, IT Support, or Cybersecurity opportunities where I can deliver genuine value.
+              From building civic awareness web platforms like <em>Uyir (Drug-Free TN)</em> to exploring computer vision dietary scanners like <em>CalScan</em> and cinematic scroll experiences, I am committed to continuous learning across C, C++, Java, HTML, CSS, JavaScript, and modern web architectures.
             </p>
 
-            <div class="philosophy-grid">
-              <div class="philosophy-card">
-                <h4>✨ Human-Centered Design</h4>
-                <p>Prioritizing accessibility, empathetic UX, and intuitive flows so anyone can use the software effortlessly.</p>
-              </div>
-
-              <div class="philosophy-card">
-                <h4>🛡️ Robust Architecture</h4>
-                <p>Clean code, typed safety, maintainable patterns, and performant APIs built to scale smoothly.</p>
-              </div>
-
-              <div class="philosophy-card">
-                <h4>⚡ Rapid Problem Solver</h4>
-                <p>Hands-on speed with the discipline to deliver high-quality, dependable web systems.</p>
-              </div>
-
-              <div class="philosophy-card">
-                <h4>🤝 Collaborative Mindset</h4>
-                <p>Clear communication, open feedback culture, and dedication to shared mission goals.</p>
-              </div>
-            </div>
-
-            <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-              <a href="#contact" class="btn btn-primary">
+            <div style="margin: 1.2rem 0; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#connect" class="btn btn-primary">
                 <span>Start a Conversation</span> ✉️
               </a>
               <button type="button" class="btn btn-secondary btn-open-resume">
@@ -224,14 +227,17 @@
                   <span>whoami</span>
                 </div>
                 <div class="terminal-output">👋 J. Rohit Rajan | BCA Student @ Hindusthan College of Science & Commerce
-🎯 Aspiring Software Developer • Web Developer • Cybersecurity Enthusiast
-📍 Erode, Tamil Nadu, India</div>
+🎯 Full-Stack Developer • Web Developer • Cybersecurity Enthusiast
+📍 Erode, Tamil Nadu, India
+🌱 Motto: "I build websites that help people."</div>
               </div>
               <div class="terminal-quick-actions">
                 <span style="font-size: 0.72rem; color: var(--text-muted); align-self: center; margin-right: 4px;">Run command:</span>
                 <button type="button" class="terminal-btn" onclick="runTerminalCmd('whoami')">whoami</button>
                 <button type="button" class="terminal-btn" onclick="runTerminalCmd('skills')">cat skills.json</button>
-                <button type="button" class="terminal-btn" onclick="runTerminalCmd('education')">cat education.txt</button>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('plateiq')">./plateiq_ai.sh</button>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('skillmont')">./skillmint.sh</button>
+                <button type="button" class="terminal-btn" onclick="runTerminalCmd('jjk')">./ryomen_jjk.sh</button>
                 <button type="button" class="terminal-btn" onclick="runTerminalCmd('uyir')">./uyir_project.sh</button>
                 <button type="button" class="terminal-btn" onclick="runTerminalCmd('contact')">rohit --contact</button>
                 <button type="button" class="terminal-btn" onclick="runTerminalCmd('clear')">clear</button>
@@ -242,29 +248,24 @@
       </div>
     </section>
 
-    <!-- 3. Projects Section -->
-    <section class="section projects-section" id="projects">
+    <!-- ========================================================================
+         3. TECH STACK (Animated stack.svg Showcase + Interactive Filter Pills)
+         ======================================================================== -->
+    <section class="section skills-section" id="stack">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Featured Work</span>
-          <h2 class="section-title">Showcasing <span class="gradient-text">3 Best Projects</span></h2>
-          <p>Real-world web solutions engineered with modern stacks, direct social impact, and high-performance design.</p>
+          <span class="section-tag">⚛️ Tech Stack</span>
+          <h2 class="section-title">Languages, Frameworks & <span class="gradient-text">Tooling Orbit</span></h2>
+          <p>Modern frontend interfaces, structured backend logic, and cloud toolchains revolving around scalable architecture.</p>
         </div>
 
-        <!-- 3 Projects Grid (Uyir, CalScan, Your Next Project) -->
-        <div class="projects-grid" id="projects-grid-target">
-          <!-- Dynamically populated by js/app.js & js/projects-data.js with fallbacks -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. Skills Section -->
-    <section class="section skills-section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Technical Toolbox</span>
-          <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
-          <p>The modern languages, frameworks, and cloud tools I leverage to build reliable digital products.</p>
+        <!-- Animated Stack Showcase Card (stack.svg) -->
+        <div class="svg-showcase-container" style="margin-bottom: 2.5rem;">
+          <div class="svg-showcase-card">
+            <div class="svg-wrapper">
+              <img src="stack.svg" alt="Tech Stack Orbital Atom and grouped categories" id="stack-svg-img" />
+            </div>
+          </div>
         </div>
 
         <!-- Filter Tabs -->
@@ -282,22 +283,194 @@
       </div>
     </section>
 
-    <!-- 5. Contact + Resume Download Section -->
-    <section class="section contact-section" id="contact">
+    <!-- ========================================================================
+         4. DEVELOPER ID & DASHBOARD (id-dashboard.svg Showcase)
+         ======================================================================== -->
+    <section class="section" id="developer-id" style="padding-top: 1rem;">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Get In Touch</span>
-          <h2 class="section-title">Let's Build Something <span class="gradient-text">Impactful</span></h2>
-          <p>Have an idea, an engineering opportunity, or want to discuss a civic/AI project? Send me a message or download my resume.</p>
+          <span class="section-tag">🪪 Credentials & Status</span>
+          <h2 class="section-title">Developer ID Badge & <span class="gradient-text">Live Dashboard</span></h2>
+          <p>Holographic developer credentials, active engineering tracks, and real-time repository stars summary.</p>
         </div>
 
-        <div class="contact-grid">
-          <!-- Left: Contact Details & Resume Download Card -->
+        <!-- Animated ID Dashboard Showcase Card (id-dashboard.svg) -->
+        <div class="svg-showcase-container">
+          <div class="svg-showcase-card">
+            <div class="svg-wrapper">
+              <img src="id-dashboard.svg" alt="Developer ID and live dashboard" id="id-dashboard-svg-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Credentials Quick Badges -->
+        <div style="display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; margin-top: 1.5rem;">
+          <span class="tech-badge-inline" style="padding: 6px 14px; font-size: 0.82rem; border-color: rgba(34, 211, 238, 0.3); color: #22d3ee;">🎓 Hindusthan College of Science & Commerce (BCA)</span>
+          <span class="tech-badge-inline" style="padding: 6px 14px; font-size: 0.82rem; border-color: rgba(167, 139, 250, 0.3); color: #a78bfa;">📍 Erode, Tamil Nadu, India</span>
+          <span class="tech-badge-inline" style="padding: 6px 14px; font-size: 0.82rem; border-color: rgba(52, 211, 153, 0.3); color: #34d399;">🆔 ID: RR-2026 • STATUS: OPEN TO ROLES</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. FEATURED BUILDS (Grid + Table View Matching Reference Profile)
+         ======================================================================== -->
+    <section class="section projects-section" id="builds">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">🎌 Featured Builds</span>
+          <h2 class="section-title">Showcasing <span class="gradient-text">Flagship Projects & Demos</span></h2>
+          <p>Real-world web solutions engineered with modern stacks, direct social impact, and high-performance design.</p>
+        </div>
+
+        <!-- Reference-style Markdown Builds Table -->
+        <div class="builds-table-container">
+          <table class="builds-table">
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>What it is</th>
+                <th>Stack</th>
+                <th style="text-align: center;">Stars</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://github.com/rohiteeh/PlateIQ" target="_blank" rel="noopener noreferrer"><strong>⚡ PlateIQ — Dietary AI</strong></a></td>
+                <td>AI computer vision nutrition scanner with instant calorie &amp; macro breakdown (Live on Pages)</td>
+                <td><span class="tech-badge-inline">HTML5</span><span class="tech-badge-inline">JavaScript</span><span class="tech-badge-inline">Vision AI</span><span class="tech-badge-inline">Chart.js</span></td>
+                <td style="text-align: center; color: #fbbf24; font-weight: 600;">⭐ 28</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/rohiteeh/cursed-energy-visualizer" target="_blank" rel="noopener noreferrer"><strong>🔥 RY0MEN — JJK Cursed Energy</strong></a></td>
+                <td>MediaPipe hand signs + Three.js WebGL Malevolent Shrine Domain Expansion</td>
+                <td><span class="tech-badge-inline">Three.js</span><span class="tech-badge-inline">MediaPipe</span><span class="tech-badge-inline">WebGL</span><span class="tech-badge-inline">Web Audio</span></td>
+                <td style="text-align: center; color: #fbbf24; font-weight: 600;">⭐ 25</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/rohiteeh/skillmont" target="_blank" rel="noopener noreferrer"><strong>🚀 SkillMint — Freelance Hub</strong></a></td>
+                <td>3-Tier student freelance hiring platform with Socket.io real-time chat &amp; RBAC (Live on Vercel)</td>
+                <td><span class="tech-badge-inline">Node.js</span><span class="tech-badge-inline">Express</span><span class="tech-badge-inline">Socket.io</span><span class="tech-badge-inline">MySQL</span></td>
+                <td style="text-align: center; color: #fbbf24; font-weight: 600;">⭐ 24</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/rohiteeh/portfolio" target="_blank" rel="noopener noreferrer"><strong>🌱 Uyir — Drug-Free TN</strong></a></td>
+                <td>Civic web platform with 120+ GIS rehabilitation clinics &amp; 104 helpline routing</td>
+                <td><span class="tech-badge-inline">HTML5</span><span class="tech-badge-inline">CSS3</span><span class="tech-badge-inline">JS</span><span class="tech-badge-inline">Leaflet GIS</span></td>
+                <td style="text-align: center; color: #fbbf24; font-weight: 600;">⭐ 18</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/rohiteeh/gesture-animation-system" target="_blank" rel="noopener noreferrer"><strong>✋ Gesture Animation System</strong></a></td>
+                <td>Touchless web motion controller using browser webcam coordinate tracking</td>
+                <td><span class="tech-badge-inline">Camera API</span><span class="tech-badge-inline">Canvas 2D</span><span class="tech-badge-inline">JavaScript</span></td>
+                <td style="text-align: center; color: #fbbf24; font-weight: 600;">⭐ 15</td>
+              </tr>
+              <tr>
+                <td><a href="https://github.com/rohiteeh/hotel-website" target="_blank" rel="noopener noreferrer"><strong>🏨 Grand Horizon — Hotel Web</strong></a></td>
+                <td>Responsive luxury hospitality booking suite with dynamic reservation flow</td>
+                <td><span class="tech-badge-inline">HTML5</span><span class="tech-badge-inline">CSS Grid</span><span class="tech-badge-inline">JavaScript</span></td>
+                <td style="text-align: center; color: #fbbf24; font-weight: 600;">⭐ 10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 6 Projects Grid -->
+        <div class="projects-grid" id="projects-grid-target">
+          <!-- Dynamically populated by js/app.js & js/projects-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. 3D CONTRIBUTION CITY (profile-night-view.svg with Theme Switcher)
+         ======================================================================== -->
+    <section class="section" id="city">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">🌃 Contribution Skyline</span>
+          <h2 class="section-title">My 3D <span class="gradient-text">Contribution City</span></h2>
+          <p><em>Every commit builds another tower — rebuilt automatically every day with isometric 3D geometry.</em></p>
+        </div>
+
+        <!-- 3D City Switcher Tabs -->
+        <div class="city-switcher-wrapper">
+          <button type="button" class="city-tab-btn active" data-theme="night">
+            <span>🌙 Night View</span>
+          </button>
+          <button type="button" class="city-tab-btn" data-theme="green">
+            <span>💚 Cyber Green</span>
+          </button>
+          <button type="button" class="city-tab-btn" data-theme="rainbow">
+            <span>🌈 Night Rainbow</span>
+          </button>
+          <button type="button" class="city-tab-btn" data-theme="season">
+            <span>🍁 Season View</span>
+          </button>
+        </div>
+
+        <!-- Animated 3D City Showcase Card -->
+        <div class="svg-showcase-container">
+          <div class="svg-showcase-card" style="border-color: rgba(34, 211, 238, 0.2);">
+            <div class="svg-wrapper">
+              <img src="profile-3d-contrib/profile-night-view.svg" alt="3D contribution city" id="city-graph-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Skyline Metric Highlights -->
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">
+          <div>✨ <strong>Daily Isometric Render</strong></div>
+          <div>🏙️ <strong>Persistent Architectural Grid</strong></div>
+          <div>⚡ <strong>100% Automated Workflow</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. LET'S CONNECT (connect.svg + Shields.io Badges + Message Form)
+         ======================================================================== -->
+    <section class="section contact-section" id="connect">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">💌 Let's Connect</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Together</span></h2>
+          <p>Open to collabs, freelance work, full-stack dev roles, IT support, cybersecurity, and anime-sized ideas.</p>
+        </div>
+
+        <!-- Animated Connect Showcase Card (connect.svg) -->
+        <div class="svg-showcase-container" style="margin-bottom: 2rem;">
+          <div class="svg-showcase-card">
+            <div class="svg-wrapper">
+              <img src="connect.svg" alt="Let's connect cards" id="connect-svg-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Official Shields.io Badges Row -->
+        <div class="shields-row">
+          <a href="https://github.com/rohiteeh" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/GitHub-22d3ee?style=for-the-badge&logo=github&logoColor=0d0e16" alt="GitHub"/>
+          </a>
+          <a href="mailto:rohitrajan1436@gmail.com">
+            <img src="https://img.shields.io/badge/Email-f472b6?style=for-the-badge&logo=gmail&logoColor=0d0e16" alt="Email"/>
+          </a>
+          <a href="https://www.instagram.com/rohiteeh" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/Instagram-a78bfa?style=for-the-badge&logo=instagram&logoColor=0d0e16" alt="Instagram"/>
+          </a>
+          <a href="https://linkedin.com/in/rohiteeh" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/LinkedIn-38bdf8?style=for-the-badge&logo=linkedin&logoColor=0d0e16" alt="LinkedIn"/>
+          </a>
+          <img src="https://komarev.com/ghpvc/?username=rohiteeh&color=a78bfa&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
+        </div>
+
+        <div class="contact-grid" style="margin-top: 2rem;">
+          <!-- Left: Direct Contact Info & Fast Copy Cards -->
           <div class="contact-info-card">
             <div class="contact-highlight-box">
               <h4>Ready to Collaborate?</h4>
               <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
-                I am currently seeking entry-level Software Developer, Web Developer, IT Support, or Cybersecurity roles. Let's connect!
+                I am actively seeking entry-level Software Developer, Web Developer, IT Support, or Cybersecurity opportunities. Let's create impactful software together!
               </p>
               
               <div style="margin-top: 1.2rem;">
@@ -338,11 +511,11 @@
               </div>
 
               <!-- LinkedIn -->
-              <a href="https://linkedin.com/in/rohitrajan" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <a href="https://linkedin.com/in/rohiteeh" target="_blank" rel="noopener noreferrer" class="contact-link-row">
                 <span class="contact-link-icon">💼</span>
                 <div class="contact-link-text">
                   <div class="contact-link-label">LinkedIn</div>
-                  <div class="contact-link-val">linkedin.com/in/rohitrajan</div>
+                  <div class="contact-link-val">linkedin.com/in/rohiteeh</div>
                 </div>
                 <span style="font-size: 0.8rem; color: var(--text-muted);">Connect ↗</span>
               </a>
@@ -384,7 +557,7 @@
 
               <div class="form-group">
                 <label for="contact-message" class="form-label">Message *</label>
-                <textarea id="contact-message" class="form-textarea" placeholder="Share job description, team details, or project ideas..." required></textarea>
+                <textarea id="contact-message" class="form-textarea" placeholder="Share job opportunity, team requirements, or project ideas..." required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
@@ -400,21 +573,21 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <div style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700;">
+      <div style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700;">
         <span class="gradient-text" id="footer-name-target">J. Rohit Rajan</span>
       </div>
-      <p style="font-size: 0.9rem; color: var(--text-muted);">
-        "I build websites that help people." • BCA Student, Hindusthan College of Science and Commerce.
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.3rem;">
+        <strong>Always learning, always building. 💜</strong> • "Code is my craft, civic impact & AI is my mission."
       </p>
 
       <div class="footer-socials">
         <a href="https://github.com/rohiteeh" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub" aria-label="GitHub">🐙</a>
-        <a href="https://linkedin.com/in/rohitrajan" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn" aria-label="LinkedIn">💼</a>
+        <a href="https://linkedin.com/in/rohiteeh" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn" aria-label="LinkedIn">💼</a>
         <a href="mailto:rohitrajan1436@gmail.com" class="footer-social-link" title="Email" aria-label="Email">✉️</a>
       </div>
 
       <div style="font-size: 0.8rem; color: var(--text-subtle); margin-top: 0.8rem;">
-        © <span id="current-year">2026</span> J. Rohit Rajan. All rights reserved.
+        © <span id="current-year">2026</span> J. Rohit Rajan. Built with passion & modern web standards.
       </div>
     </div>
   </footer>
@@ -482,7 +655,7 @@
         <form id="name-form">
           <input type="text" id="name-modal-input" class="name-modal-input" placeholder="e.g. John Doe" required maxlength="40">
           
-          <div style="display: flex; gap: 0.8rem; justify-content: flex-end;">
+          <div style="display: flex; gap: 0.8rem; justify-content: flex-end; margin-top: 1rem;">
             <button type="button" class="btn btn-secondary" onclick="closeNameModal()">Cancel</button>
             <button type="submit" class="btn btn-primary">Save & Apply</button>
           </div>

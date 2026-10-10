@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initAmbientCanvas();
   initCardSpotlightAndTilt();
   initClickSparkle();
+  initCityGraphSwitcher();
 });
 
 /* --------------------------------------------------------------------------
@@ -177,7 +178,10 @@ function renderProjects() {
       </div>
       
       <div class="project-body">
-        <h3 class="project-title">${project.title}</h3>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.4rem;">
+          <h3 class="project-title" style="margin-bottom:0;">${project.title}</h3>
+          <span class="tech-badge-inline" style="color: #fbbf24; border-color: rgba(251, 191, 36, 0.3); background: rgba(251, 191, 36, 0.08); font-weight:600;">⭐ ${project.stars}</span>
+        </div>
         <p class="project-desc">${project.description}</p>
         
         <div class="project-impact">
@@ -668,6 +672,20 @@ window.runTerminalCmd = function (cmd) {
 - Mapped 120+ verified rehabilitation clinics with Leaflet GIS
 - Direct 104 helpline routing + secure reporting pipeline`,
 
+    plateiq: `🥗 [AI VISION PROJECT] PlateIQ — Multimodal Dietary Vision Analyzer
+- Live Demo: https://rohiteeh.github.io/PlateIQ/
+- Repository: github.com/rohiteeh/PlateIQ
+- Tech: TensorFlow.js, Canvas API, Real-time Nutritional Analysis & Macro Breakdown`,
+
+    skillmont: `💼 [FULL-STACK PLATFORM] SkillMint — 3-Tier Freelance Marketplace
+- Live App: https://skillmont.vercel.app
+- Repository: github.com/rohiteeh/skillmont
+- Tech: Express.js, Socket.io (Realtime Chat), MySQL/SQLite, JWT Auth, RBAC`,
+
+    jjk: `⚡ [CREATIVE 3D] RY0MEN — Jujutsu Kaisen Malevolent Shrine Visualizer
+- Repository: github.com/rohiteeh/cursed-energy-visualizer
+- Tech: Three.js WebGL shaders, MediaPipe Hand Tracking (Domain Expansion gesture), Audio FX`,
+
     hackathon: `🌱 [CIVIC TECH PROJECT] Uyir - Drug-Free Tamil Nadu
 - Civic Tech Platform for Community Healthcare
 - Mapped 120+ verified rehabilitation clinics with Leaflet GIS
@@ -676,7 +694,7 @@ window.runTerminalCmd = function (cmd) {
     contact: `📬 Contact J. Rohit Rajan:
 - Email: rohitrajan1436@gmail.com
 - Phone: +91 8248064014
-- LinkedIn: linkedin.com/in/rohitrajan
+- LinkedIn: linkedin.com/in/rohiteeh
 - GitHub: github.com/rohiteeh`,
 
     clear: ""
@@ -705,3 +723,35 @@ window.runTerminalCmd = function (cmd) {
 
   outputTarget.scrollTop = outputTarget.scrollHeight;
 };
+
+/* G. 3D Contribution City Theme Switcher */
+function initCityGraphSwitcher() {
+  const buttons = document.querySelectorAll(".city-tab-btn");
+  const graphImg = document.getElementById("city-graph-img");
+  if (!graphImg || !buttons.length) return;
+
+  const srcMap = {
+    "night": "profile-3d-contrib/profile-night-view.svg",
+    "green": "profile-3d-contrib/profile-green.svg",
+    "rainbow": "profile-3d-contrib/profile-night-rainbow.svg",
+    "season": "profile-3d-contrib/profile-season.svg"
+  };
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const theme = btn.getAttribute("data-theme");
+      const newSrc = srcMap[theme] || srcMap["night"];
+
+      graphImg.style.opacity = "0.2";
+      graphImg.style.transform = "scale(0.98)";
+      setTimeout(() => {
+        graphImg.src = newSrc;
+        graphImg.style.opacity = "1";
+        graphImg.style.transform = "scale(1)";
+        showToast(`🌃 3D City view updated: ${btn.textContent.trim()}`);
+      }, 150);
+    });
+  });
+}

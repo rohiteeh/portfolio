@@ -9,7 +9,7 @@ const resumeData = {
   email: "rohitrajan1436@gmail.com",
   phone: "+91 8248064014",
   location: "Erode, Tamil Nadu, India",
-  linkedin: "linkedin.com/in/rohitrajan",
+  linkedin: "linkedin.com/in/rohiteeh",
   summary: "Motivated Bachelor of Computer Applications (BCA) student with a strong foundation in programming, web development, and problem-solving. Passionate about learning emerging technologies and building practical software solutions. Quick learner with strong communication and teamwork skills, seeking an entry-level Software Developer, Web Developer, IT Support, or Cybersecurity role.",
   
   education: [
